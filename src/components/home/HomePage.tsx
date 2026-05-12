@@ -88,7 +88,7 @@ export function HomePage() {
 
   return (
     <div className="overflow-x-hidden [overflow-y:visible]">
-      <div ref={heroRef} className="relative h-[190vh] sm:h-[178vh]">
+      <div ref={heroRef} className="relative h-[104vh] sm:h-[106vh]">
         <div className="sticky top-0 flex h-dvh min-h-[640px] flex-col justify-center overflow-hidden pt-[max(5.75rem,env(safe-area-inset-top)+4.5rem)] sm:pt-28">
           {/* Cinematic atmosphere — layered animated gradients */}
           <div className="pointer-events-none absolute inset-0 -z-20 bg-ivory-50" />
@@ -250,48 +250,40 @@ export function HomePage() {
                 >
                   <div className="h-px w-16 bg-gradient-to-r from-taupe-200/90 to-transparent sm:w-28" />
                   <p className="max-w-xs font-sans text-[10px] font-medium uppercase tracking-[0.34em] text-taupe-200">
-                    Linger into the rooms
+                    Scroll to enter the six rooms
                   </p>
                 </motion.div>
               </div>
 
             </div>
           </motion.div>
-
-          <motion.div
-            style={{ opacity: heroOpacity }}
-            className="pointer-events-none relative z-20 mx-auto flex justify-center pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-6"
-          >
-            <div className="flex flex-col items-center gap-3 text-taupe-300">
-              <span className="font-sans text-[9px] uppercase tracking-[0.42em]">
-                Drift
-              </span>
-              <motion.span
-                animate={reduce ? undefined : { y: [0, 8, 0] }}
-                transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
-                className="h-12 w-px bg-gradient-to-b from-taupe-200/90 via-rose-200/50 to-transparent"
-              />
-            </div>
-          </motion.div>
         </div>
       </div>
 
-      <section className="scroll-mt-28 border-t border-transparent py-28 safe-x sm:py-36 lg:px-10 lg:py-44">
+      <section className="scroll-mt-28 border-t border-transparent pb-24 pt-10 safe-x sm:pb-32 sm:pt-14 lg:px-10 lg:pb-40 lg:pt-20">
         <div className="relative mx-auto max-w-6xl">
         <motion.div
-          initial={reduce ? false : { opacity: 0, y: 28 }}
+          initial={reduce ? false : { opacity: 0, y: 22 }}
           whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
           transition={{ duration: 1.1, ease: silk }}
-          className="mb-24 max-w-2xl space-y-6 sm:mb-32 sm:space-y-7"
+          className="mb-16 flex flex-col gap-7 sm:mb-24 sm:gap-9"
         >
-          <h2 className="font-display text-[clamp(1.875rem,5vw,2.75rem)] font-medium tracking-[-0.03em] text-softblack">
-            Rooms in the apartment.
-          </h2>
-          <p className="font-sans text-sm leading-[1.7] text-warmgrey-400 sm:text-[15px]">
-            Each doorway is a feeling first. Objects rest in small constellations
-            so texture, light, and language can carry the why—not the what.
-          </p>
+          <div className="flex items-center gap-5">
+            <span className="h-px w-12 bg-gradient-to-r from-transparent via-taupe-200/80 to-taupe-200/80 sm:w-20" aria-hidden />
+            <p className="font-sans text-[9px] font-medium uppercase tracking-[0.42em] text-taupe-300 sm:text-[10px]">
+              Six rooms · enter slowly
+            </p>
+          </div>
+          <div className="max-w-2xl space-y-5 sm:space-y-6">
+            <h2 className="font-display text-[clamp(1.875rem,5vw,2.75rem)] font-medium leading-[1.05] tracking-[-0.03em] text-softblack">
+              Rooms in the apartment.
+            </h2>
+            <p className="font-sans text-sm leading-[1.7] text-warmgrey-400 sm:text-[15px]">
+              Each doorway is a feeling first. Objects rest in small constellations
+              so texture, light, and language can carry the why—not the what.
+            </p>
+          </div>
         </motion.div>
 
         <div className="grid auto-rows-auto gap-10 sm:gap-12 lg:grid-cols-12 lg:gap-x-10 lg:gap-y-14">
