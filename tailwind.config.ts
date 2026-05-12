@@ -31,12 +31,38 @@ const config: Config = {
           DEFAULT: "#1B1714",
           800: "#22201D"
         },
+        signature: {
+          DEFAULT: "#C4607A",
+          light: "#EFB8C3",
+          faint: "#FBF0F2",
+        },
         rose: {
           50: "#F6E5DE",
           100: "#EDCFC3",
           200: "#E1B6A6",
           300: "#C99685",
           400: "#A87767"
+        },
+        berry: {
+          DEFAULT: "#B5294E",
+          soft: "#E8809A",
+          light: "#F5C5D0",
+          dark: "#7E1535"
+        },
+        sage: {
+          DEFAULT: "#7DAF9C",
+          light: "#C2DDD5",
+          faint: "#E8F3EF"
+        },
+        lavender: {
+          DEFAULT: "#9B86C4",
+          light: "#D4C8EB",
+          faint: "#F0EBF9"
+        },
+        gold: {
+          DEFAULT: "#C4913A",
+          light: "#EDD9A3",
+          faint: "#FBF4E6"
         }
       },
       fontFamily: {

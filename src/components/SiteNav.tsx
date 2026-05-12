@@ -86,7 +86,7 @@ export function SiteNav() {
                   {active ? (
                     <motion.span
                       layoutId="nav-underline"
-                      className="absolute inset-x-2 bottom-1.5 h-px bg-gradient-to-r from-transparent via-rose-200/90 to-transparent"
+                      className="absolute inset-x-2 bottom-1.5 h-px bg-gradient-to-r from-transparent via-signature/70 to-transparent"
                       transition={{ type: "spring", stiffness: 320, damping: 42 }}
                     />
                   ) : null}

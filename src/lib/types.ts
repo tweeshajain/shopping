@@ -1,10 +1,8 @@
 export type SectionSlug =
-  | "rebought"
-  | "currently-using"
-  | "wishlist"
-  | "perfume-moods"
-  | "makeup-bag"
-  | "shelf";
+  | "the-ritual"
+  | "the-glow-edit"
+  | "scent-moods"
+  | "basically-mine";
 
 /** Mirrors `data/products.json` — single source of truth for catalog data. */
 export type Product = {

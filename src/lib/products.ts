@@ -2,12 +2,10 @@ import productsJson from "../../data/products.json";
 import type { Product, SectionSlug } from "./types";
 
 const SECTION_SLUGS = new Set<SectionSlug>([
-  "rebought",
-  "currently-using",
-  "wishlist",
-  "perfume-moods",
-  "makeup-bag",
-  "shelf"
+  "the-ritual",
+  "the-glow-edit",
+  "scent-moods",
+  "basically-mine"
 ]);
 
 function parseProducts(raw: unknown): Product[] {

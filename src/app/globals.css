@@ -36,9 +36,10 @@
   }
 
   ::selection {
-    background: rgba(201, 150, 133, 0.35);
+    background: rgba(181, 41, 78, 0.18);
     color: #1b1714;
   }
+
 
   html {
     scroll-behavior: smooth;
@@ -158,6 +159,17 @@
       transparent 100%
     );
   }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.75); }
+}
+.pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
 }
 
 /* Custom, almost-invisible scrollbar */

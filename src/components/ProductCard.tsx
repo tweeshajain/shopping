@@ -100,13 +100,13 @@ export function ProductCard({
               {/* Collectible marks */}
               <div className="pointer-events-none absolute left-3 top-3 z-10 flex flex-wrap gap-1.5 sm:left-4 sm:top-4">
                 {product.rebought ? (
-                  <span className="border-b border-white/25 pb-0.5 font-sans text-[7px] font-medium uppercase tracking-[0.32em] text-white/65">
-                    Always again
+                  <span className="rounded-full bg-white/15 px-2 py-0.5 font-sans text-[7px] font-medium uppercase tracking-[0.28em] text-white/80 backdrop-blur-sm">
+                    Repurchased ✦
                   </span>
                 ) : null}
                 {product.wishlist ? (
-                  <span className="border-b border-rose-100/35 pb-0.5 font-sans text-[7px] font-medium uppercase tracking-[0.32em] text-rose-100/85">
-                    Waiting softly
+                  <span className="rounded-full bg-berry/20 px-2 py-0.5 font-sans text-[7px] font-medium uppercase tracking-[0.28em] text-rose-100/90 backdrop-blur-sm">
+                    On the list
                   </span>
                 ) : null}
               </div>

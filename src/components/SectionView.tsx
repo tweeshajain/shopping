@@ -30,7 +30,7 @@ export function SectionView({ section, products }: SectionViewProps) {
             <span aria-hidden>←</span>
             Atelier
           </Link>
-          <p className="font-sans text-[10px] font-medium uppercase tracking-[0.4em] text-rose-400/95">
+          <p className="font-sans text-[10px] font-medium uppercase tracking-[0.4em] text-berry/70">
             {section.ambient}
           </p>
           <h1 className="font-display text-balance text-[clamp(2.25rem,6vw,3.5rem)] font-medium tracking-[-0.035em] text-softblack">

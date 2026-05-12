@@ -25,7 +25,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: `${section.label} · Atelier`,
     description:
-      params.slug === "perfume-moods"
+      params.slug === "scent-moods"
         ? "Drift through perfume as pure mood—hotel hush, vanilla heat, Italian sun. An immersive installation, not a catalog."
         : section.subline,
   };
@@ -38,7 +38,7 @@ export default function SectionPage({ params }: Props) {
   const slug = params.slug as SectionSlug;
   const section = getSection(slug)!;
 
-  if (slug === "perfume-moods") {
+  if (slug === "scent-moods") {
     const scenes = getPerfumeMoodScenes();
     if (scenes.length > 0) {
       return <PerfumeMoodsInstallation scenes={scenes} />;

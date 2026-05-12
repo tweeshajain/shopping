@@ -4,52 +4,36 @@ export type { SectionSlug };
 
 export const SECTIONS: SectionMeta[] = [
   {
-    slug: "rebought",
-    label: "Rebought",
-    headline: "The objects that keep earning their place.",
+    slug: "the-ritual",
+    label: "The Ritual",
+    headline: "The products that actually do something.",
     subline:
-      "Not backups. Not bargains. These are the formulas that became rituals and quietly returned to the room again and again.",
-    ambient: "loyalty in glass"
+      "Skincare that earned its place through results, not hype. Every single one has been tested, trusted, and repurchased.",
+    ambient: "skin first, always"
   },
   {
-    slug: "currently-using",
-    label: "Currently Using",
-    headline: "A small present-tense edit on the vanity.",
+    slug: "the-glow-edit",
+    label: "The Glow Edit",
+    headline: "My favorites, tried and approved.",
     subline:
-      "Only what is open, warm from the hand, and close enough to be reached without thinking.",
-    ambient: "within arm's reach"
+      "The makeup I keep reaching for no matter what else I try. These ones never let me down.",
+    ambient: "tried, tested, loved"
   },
   {
-    slug: "wishlist",
-    label: "Wishlist",
-    headline: "Objects observed before they are invited in.",
+    slug: "scent-moods",
+    label: "Scent Moods",
+    headline: "A fragrance for every version of me.",
     subline:
-      "The patient list: considered, revisited, and allowed to remain a little imaginary.",
-    ambient: "desire, slowed down"
-  },
-  {
-    slug: "perfume-moods",
-    label: "Perfume Moods",
-    headline: "Scent as atmosphere, not inventory.",
-    subline:
-      "Move through fragrances like rooms—hotel hush, dark florals, soft musk, citrus heat.",
+      "Move through scents like moods — there's one for every day, every night, every feeling.",
     ambient: "weather in a bottle"
   },
   {
-    slug: "makeup-bag",
-    label: "Makeup Bag",
-    headline: "The travelling few.",
+    slug: "basically-mine",
+    label: "Basically Mine",
+    headline: "It's in my head. It'll be in my hands soon.",
     subline:
-      "A capsule edit for pockets, dinner tables, and small mirrors. Everything earns the space it takes.",
-    ambient: "the edit that leaves"
-  },
-  {
-    slug: "shelf",
-    label: "Shelf",
-    headline: "The whole still life, with air around it.",
-    subline:
-      "A quiet arrangement of daily objects—spaced like furniture in a beautiful apartment.",
-    ambient: "the room photographed"
+      "The list I check when payday hits. Already decided — just waiting on the timing.",
+    ambient: "not yet mine"
   }
 ];
 
