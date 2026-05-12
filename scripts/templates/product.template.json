@@ -1,0 +1,13 @@
+{
+  "id": "your-id",
+  "name": "Product name",
+  "section": "currently-using",
+  "category": "Category · Brand",
+  "review": "One or two sentences, editorial tone.",
+  "tags": ["tag-one"],
+  "affiliateLink": "https://example.com/your-link",
+  "image": "https://images.unsplash.com/photo-xxx?w=800&q=80",
+  "mood": null,
+  "rebought": false,
+  "wishlist": false
+}

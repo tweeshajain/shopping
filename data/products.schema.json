@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atelier.local/schemas/products.json",
+  "title": "Atelier products",
+  "description": "Single source of truth for catalog rows. Site reads data/products.json; AI tools should edit this array only.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/product" },
+  "$defs": {
+    "section": {
+      "type": "string",
+      "enum": [
+        "rebought",
+        "currently-using",
+        "wishlist",
+        "perfume-moods",
+        "makeup-bag",
+        "shelf"
+      ]
+    },
+    "product": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "section",
+        "category",
+        "review",
+        "tags",
+        "affiliateLink",
+        "image",
+        "mood",
+        "rebought",
+        "wishlist"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable unique key. Referenced from data/perfume-vibes.json productIds."
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "section": { "$ref": "#/$defs/section" },
+        "category": {
+          "type": "string",
+          "description": "Editorial label, e.g. \"Skincare · Brand\""
+        },
+        "review": { "type": "string" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Include \"whisper\" to feature on homepage whispers row."
+        },
+        "affiliateLink": {
+          "type": "string",
+          "description": "URL; may be empty string to hide affiliate UI."
+        },
+        "image": { "type": "string", "minLength": 1 },
+        "mood": {
+          "type": ["string", "null"],
+          "description": "Perfume mood line; null for non-scent products."
+        },
+        "rebought": { "type": "boolean" },
+        "wishlist": { "type": "boolean" }
+      }
+    }
+  }
+}

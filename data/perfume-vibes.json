@@ -1,0 +1,75 @@
+[
+  {
+    "id": "hotel",
+    "label": "Clean expensive hotel",
+    "whisper": "Thread-count silence, lobby iris, chilled marble at 2 a.m.",
+    "productIds": ["p3"],
+    "gradient": {
+      "a": "#eef3f8",
+      "b": "#d8e3ef",
+      "c": "#f6f3ee",
+      "spot": "rgba(160, 182, 205, 0.42)"
+    }
+  },
+  {
+    "id": "vanilla",
+    "label": "Rich girl vanilla",
+    "whisper": "Heirloom warmth—cashmere, candle wax, and a driver waiting downstairs.",
+    "productIds": ["p4"],
+    "gradient": {
+      "a": "#faf6ef",
+      "b": "#f0e4d4",
+      "c": "#fde8df",
+      "spot": "rgba(237, 207, 195, 0.5)"
+    }
+  },
+  {
+    "id": "dinner",
+    "label": "Mysterious dinner scent",
+    "whisper": "Velvet booths, candle smoke, a secret only the room remembers.",
+    "productIds": ["p1"],
+    "tone": "dark",
+    "gradient": {
+      "a": "#1c1614",
+      "b": "#2a1f22",
+      "c": "#3d2528",
+      "spot": "rgba(201, 150, 160, 0.25)"
+    }
+  },
+  {
+    "id": "soft",
+    "label": "Soft luxury",
+    "whisper": "Rose milk light—powder that feels like breath on bare shoulder.",
+    "productIds": ["p5", "p2"],
+    "gradient": {
+      "a": "#fdf8f6",
+      "b": "#f5e8e4",
+      "c": "#efe6de",
+      "spot": "rgba(225, 182, 166, 0.35)"
+    }
+  },
+  {
+    "id": "italy",
+    "label": "Summer in Italy",
+    "whisper": "Terracotta, sea salt, and citrus oil on sun-warmed wrists.",
+    "productIds": ["p6"],
+    "gradient": {
+      "a": "#fff9f0",
+      "b": "#ffe8cc",
+      "c": "#f0ebe3",
+      "spot": "rgba(255, 183, 120, 0.28)"
+    }
+  },
+  {
+    "id": "shampoo",
+    "label": "Expensive shampoo energy",
+    "whisper": "Glass showers, pear water, and the quiet confidence of very clean hair.",
+    "productIds": ["p7"],
+    "gradient": {
+      "a": "#f4f8fb",
+      "b": "#e8f0f4",
+      "c": "#fafcf9",
+      "spot": "rgba(180, 210, 220, 0.38)"
+    }
+  }
+]
