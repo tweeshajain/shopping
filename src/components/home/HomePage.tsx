@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import {
   motion,
   useReducedMotion,
@@ -170,39 +169,31 @@ export function HomePage() {
             className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-1 flex-col justify-center safe-x sm:px-10 lg:px-14"
           >
             <div className="relative grid items-center gap-12 lg:grid-cols-12 lg:gap-6">
-              {/* Floating visuals — editorial still life */}
+              {/* Floating visuals — pure light, no objects */}
               <motion.div
                 aria-hidden
-                className="pointer-events-none absolute bottom-[8%] left-[-2%] z-0 hidden h-36 w-36 sm:h-44 sm:w-44 lg:bottom-[14%] lg:left-[4%] lg:block"
-                initial={reduce ? false : { opacity: 0, scale: 0.85 }}
+                className="pointer-events-none absolute bottom-[10%] left-[-4%] z-0 hidden h-56 w-56 sm:h-72 sm:w-72 lg:bottom-[14%] lg:left-[2%] lg:block"
+                initial={reduce ? false : { opacity: 0, scale: 0.9 }}
                 animate={reduce ? undefined : { opacity: 1, scale: 1 }}
-                transition={{ duration: 1.2, ease: silk, delay: 0.45 }}
+                transition={{ duration: 1.4, ease: silk, delay: 0.45 }}
               >
                 <motion.div
                   animate={
-                    calmHero ? undefined : { y: [0, 10, 0], x: [0, 6, 0] }
+                    calmHero ? undefined : { scale: [1, 1.06, 1], opacity: [0.55, 0.75, 0.55] }
                   }
                   transition={{
-                    duration: 11,
+                    duration: 13,
                     repeat: Infinity,
                     ease: "easeInOut",
                     delay: 0.8,
                   }}
-                  className="relative h-full w-full overflow-hidden rounded-full border border-white/50 bg-white/30 shadow-soft backdrop-blur-xl"
-                >
-                  <Image
-                    src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&q=80"
-                    alt=""
-                    fill
-                    className="object-cover"
-                    sizes="176px"
-                  />
-                </motion.div>
+                  className="relative h-full w-full rounded-full bg-[radial-gradient(circle_at_40%_40%,rgba(237,207,195,0.55)_0%,rgba(247,242,234,0.18)_45%,transparent_72%)] blur-2xl"
+                />
               </motion.div>
 
               <motion.div
                 aria-hidden
-                className="pointer-events-none absolute right-[18%] top-[38%] z-0 hidden lg:block"
+                className="pointer-events-none absolute right-[14%] top-[36%] z-0 hidden lg:block"
                 animate={reduce ? undefined : { y: [0, -8, 0], opacity: [0.35, 0.55, 0.35] }}
                 transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
               >
@@ -264,18 +255,6 @@ export function HomePage() {
                 </motion.div>
               </div>
 
-              {/* Mobile floating strip */}
-              <div className="relative z-10 mt-10 flex gap-4 overflow-x-auto pb-2 lg:hidden [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                <div className="relative aspect-[3/4] w-[42vw] shrink-0 overflow-hidden rounded-2xl border border-white/45 bg-white/20 shadow-soft backdrop-blur-sm">
-                  <Image
-                    src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&q=80"
-                    alt=""
-                    fill
-                    className="object-cover"
-                    sizes="45vw"
-                  />
-                </div>
-              </div>
             </div>
           </motion.div>
 
