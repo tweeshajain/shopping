@@ -173,36 +173,6 @@ export function HomePage() {
               {/* Floating visuals — editorial still life */}
               <motion.div
                 aria-hidden
-                className="pointer-events-none absolute right-[-4%] top-[6%] z-0 hidden w-[min(42vw,320px)] lg:right-[2%] lg:top-[10%] lg:block"
-                initial={reduce ? false : { opacity: 0, rotate: -6, y: 40 }}
-                animate={reduce ? undefined : { opacity: 1, rotate: -4, y: 0 }}
-                transition={{ duration: 1.4, ease: silk, delay: 0.2 }}
-              >
-                <motion.div
-                  animate={
-                    calmHero ? undefined : { y: [0, -14, 0], rotate: [-4, -2, -4] }
-                  }
-                  transition={{
-                    duration: 9,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="relative aspect-[3/4] overflow-hidden rounded-[2rem] border border-white/55 bg-white/20 shadow-[0_40px_100px_-40px_rgba(110,94,77,0.45)] backdrop-blur-md"
-                >
-                  <Image
-                    src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=900&q=80"
-                    alt=""
-                    fill
-                    className="object-cover"
-                    sizes="320px"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-softblack/35 via-transparent to-white/25" />
-                </motion.div>
-              </motion.div>
-
-              <motion.div
-                aria-hidden
                 className="pointer-events-none absolute bottom-[8%] left-[-2%] z-0 hidden h-36 w-36 sm:h-44 sm:w-44 lg:bottom-[14%] lg:left-[4%] lg:block"
                 initial={reduce ? false : { opacity: 0, scale: 0.85 }}
                 animate={reduce ? undefined : { opacity: 1, scale: 1 }}
@@ -296,22 +266,13 @@ export function HomePage() {
 
               {/* Mobile floating strip */}
               <div className="relative z-10 mt-10 flex gap-4 overflow-x-auto pb-2 lg:hidden [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                <div className="relative aspect-[3/4] w-[42vw] shrink-0 overflow-hidden rounded-2xl border border-white/50 bg-white/25 shadow-soft backdrop-blur-md">
-                  <Image
-                    src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80"
-                    alt=""
-                    fill
-                    className="object-cover"
-                    sizes="45vw"
-                  />
-                </div>
-                <div className="relative aspect-[3/4] w-[34vw] shrink-0 translate-y-6 overflow-hidden rounded-2xl border border-white/45 bg-white/20 shadow-soft backdrop-blur-sm">
+                <div className="relative aspect-[3/4] w-[42vw] shrink-0 overflow-hidden rounded-2xl border border-white/45 bg-white/20 shadow-soft backdrop-blur-sm">
                   <Image
                     src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&q=80"
                     alt=""
                     fill
                     className="object-cover"
-                    sizes="38vw"
+                    sizes="45vw"
                   />
                 </div>
               </div>
