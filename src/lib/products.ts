@@ -46,7 +46,7 @@ export function productsForSection(slug: SectionSlug) {
 }
 
 export function productsForHomeWhispers() {
-  const priority = ["p5", "r1", "c1", "w1"];
+  const priority = ["r3", "p5", "c1", "w1"];
   const byId = new Map(PRODUCTS.map((product) => [product.id, product]));
 
   return priority
