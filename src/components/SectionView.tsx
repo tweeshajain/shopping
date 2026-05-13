@@ -15,13 +15,13 @@ export function SectionView({ section, products }: SectionViewProps) {
   const reduce = useReducedMotion();
 
   return (
-    <div className="min-h-dvh scroll-mt-28 pb-36 pt-32 safe-x sm:pb-44 sm:pt-40 sm:px-10">
+    <div className="min-h-dvh scroll-mt-28 pb-28 pt-28 safe-x sm:pb-36 sm:pt-36 sm:px-10">
       <div className="mx-auto max-w-6xl">
         <motion.header
           initial={reduce ? false : { opacity: 0, y: 32 }}
           animate={reduce ? undefined : { opacity: 1, y: 0 }}
           transition={{ duration: 1.1, ease: silk }}
-          className="mb-24 max-w-3xl space-y-7 sm:mb-32 sm:space-y-9"
+          className="mb-14 max-w-3xl space-y-5 sm:mb-20 sm:space-y-7"
         >
           <Link
             href="/"
@@ -56,7 +56,7 @@ export function SectionView({ section, products }: SectionViewProps) {
                 key={p.id}
                 initial={reduce ? false : { opacity: 0, y: 44 }}
                 whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-15% 0px" }}
+                viewport={{ once: true, margin: "-5% 0px" }}
                 transition={{ duration: 1.05, ease: silk, delay: reduce ? 0 : 0.07 * i }}
                 className={
                   i % 2 === 0
