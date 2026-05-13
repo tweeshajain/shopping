@@ -50,14 +50,13 @@ export function SectionView({ section, products }: SectionViewProps) {
             here.
           </p>
         ) : (
-          <div className="flex flex-col gap-20 sm:gap-28 lg:gap-32">
+          <div className="flex flex-col gap-16 sm:gap-20 lg:gap-24">
             {products.map((p, i) => (
               <motion.div
                 key={p.id}
-                initial={reduce ? false : { opacity: 0, y: 44 }}
-                whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-5% 0px" }}
-                transition={{ duration: 1.05, ease: silk, delay: reduce ? 0 : 0.07 * i }}
+                initial={reduce ? false : { opacity: 0, y: 28 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, ease: silk, delay: reduce ? 0 : 0.1 * i }}
                 className={
                   i % 2 === 0
                     ? "lg:mr-[12%] lg:max-w-md lg:self-start"
