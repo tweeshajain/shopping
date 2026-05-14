@@ -40,8 +40,7 @@ export function ProductCard({
     <motion.article
       layout
       initial={reduce ? false : { opacity: 0, y: 40 }}
-      whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: isMobile ? "-6% 0px" : "-12% 0px" }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.12, ease: silk, delay: baseDelay }}
       className={`relative touch-manipulation ${className}`}
     >
